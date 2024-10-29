@@ -14,7 +14,7 @@ namespace MathiasVera_ExamenP1.Models
         [DisplayName("Año del modelo")]
         public int Año { get; set; }
         [NotNull]
-        [AllowedValues(0.0, 1000.0)]
+        [Range(0, 1000)]
         public decimal Precio { get; set; }
         public MathiasVera Propietario { get; set; }
         [ForeignKey("MathiasVera")]
