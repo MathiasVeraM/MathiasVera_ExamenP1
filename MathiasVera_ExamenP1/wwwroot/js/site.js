@@ -2,3 +2,7 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
+
+function CrearAlerta() {
+    alert("Mi nombre es Mathias Vera y mi hobbie es Escuchar Musicales");
+}
