@@ -65,8 +65,10 @@ namespace MathiasVera_ExamenP1.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            _context.Add(celular);
+            await _context.SaveChangesAsync();
             ViewData["MathiasVeraId"] = new SelectList(_context.MathiasVera, "Id", "Id", celular.MathiasVeraId);
-            return View(celular);
+            return View(celular) ; 
         }
 
         // GET: Celulars/Edit/5
